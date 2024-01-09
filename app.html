@@ -8,13 +8,15 @@
         <script src="jogo.js"></script>
     </head>
 
-    <body>
+    <body >
         <script>
             window.addEventListener("resize", ajustaTamanhoPalcoJogo);
             ajustaTamanhoPalcoJogo();
         </script>
 
-        <script>posicaoRandomica()</script>
+        <script>
+        setInterval(function(){ posicaoRandomica() },1000)
+        </script>
     
     </body>
 </html>

@@ -1,3 +1,4 @@
+
 var altura=0;
 var largura=0;
 
@@ -7,6 +8,9 @@ function ajustaTamanhoPalcoJogo(){
     console.log(altura, largura);
 }
 function posicaoRandomica(){
+    if(document.getElementById("mosquito")){
+        document.getElementById("mosquito").remove();
+    }
     var possicaox =Math.floor(Math.random()*largura)-90;
     var possicaoy = Math.floor(Math.random()*altura)-90;
 
@@ -22,6 +26,7 @@ function posicaoRandomica(){
     mosquito.style.top = possicaoy + 'px';
     mosquito.style.position = "absolute";
     document.body.appendChild(mosquito);
+    mosquito.id = "mosquito";
 }
 function tamanhoAleatorio(){
     var tamanho = Math.floor(Math.random()*3);
