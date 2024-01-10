@@ -13,10 +13,6 @@
             window.addEventListener("resize", ajustaTamanhoPalcoJogo);
             ajustaTamanhoPalcoJogo();
         </script>
-
-        <script>
-        setInterval(function(){ posicaoRandomica() },2000)
-        </script>
         <div class="painel">
             <div class="vidas">
                 <img id="v1" src="imagens/coracao_cheio.png" alt="">
@@ -24,11 +20,14 @@
                 <img id="v3" src="imagens/coracao_cheio.png" alt="">
 
             </div>
-            <div class="cronometro">Tempo restante: ?
-
+            <div class="cronometro">Tempo restante:<span id="cronometro"></span>
             </div>
 
         </div>
+        <script>
+            document.getElementById("cronometro").innerHTML=tempo;
+           var criaMosquito = setInterval(function(){ posicaoRandomica() },2000)
+         </script>
     
     </body>
 </html>

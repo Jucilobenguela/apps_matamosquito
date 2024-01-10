@@ -2,12 +2,25 @@
 var altura=0;
 var largura=0;
 var vida=1;
+var tempo = 10;
 
 function ajustaTamanhoPalcoJogo(){
     altura = window.innerHeight;
     largura = window.innerWidth;
     console.log(altura, largura);
 }
+
+var cronometro =setInterval(function(){
+    tempo--;
+    if(tempo<0){
+        clearInterval(cronometro);
+        clearInterval(criaMosquito);
+        alert("vitoria")
+    }else{
+        document.getElementById("cronometro").innerHTML=tempo;
+    }
+}, 1000);
+
 function posicaoRandomica(){
     if(document.getElementById("mosquito")){
         document.getElementById("mosquito").remove();
