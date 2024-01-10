@@ -21,7 +21,7 @@ Este jogo foi criado como um projeto divertido e interativo usando HTML, CSS (co
 ## Configuração
 1. Clone o repositório em sua máquina local.
    ```bash
-  https://github.com/Jucilobenguela/apps_matamosquito.git
+   git https://github.com/Jucilobenguela/apps_matamosquito.git
    ```
 2. Abra o arquivo `index.html` em um navegador da web para jogar o game.
 
