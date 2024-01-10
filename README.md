@@ -1,14 +1,12 @@
 # apps_mataMosquito
 
-Bem-vindo ao repositório "Jogo dos Mosquitos"! Este jogo simples baseado em navegador desafia os jogadores a esmagar mosquitos que aparecem aleatoriamente na tela. O jogo inclui níveis de dificuldade, um cronômetro regressivo e mosquitos de tamanhos variados.
+Bem-vindo ao repositório "Jogo Mata Mosquitos"! Este jogo simples baseado em navegador desafia os jogadores a esmagar mosquitos que aparecem aleatoriamente na tela. O jogo inclui níveis de dificuldade, um cronômetro regressivo e mosquitos de tamanhos variados.
 
 ## Sumário
 - [Introdução](#introdução)
 - [Como Jogar](#como-jogar)
 - [Configuração](#configuração)
 - [Visão Geral do Código](#visão-geral-do-código)
-- [Contribuições](#contribuições)
-- [Licença](#licença)
 
 ## Introdução
 Este jogo foi criado como um projeto divertido e interativo usando HTML, CSS (com Bootstrap) e JavaScript. Os jogadores podem escolher entre diferentes níveis de dificuldade e tentar esmagar o maior número possível de mosquitos dentro do tempo determinado.
@@ -29,5 +27,8 @@ Este jogo foi criado como um projeto divertido e interativo usando HTML, CSS (co
 
 ## Visão Geral do Código
 - `index.html`: Arquivo HTML principal contendo a interface do jogo e o menu.
+-  `fim_do_jogo.html`: Arquivo HTML contendo a interface do final do jogo.
+- `vitória.html`: Arquivo HTML contendo a interface da vitória.
 - `app.js`: Arquivo JavaScript que lida com a lógica do jogo, níveis de dificuldade e geração de mosquitos.
 - `estilo.css`: Arquivo CSS para estilização, utilizando Bootstrap para responsividade.
+
